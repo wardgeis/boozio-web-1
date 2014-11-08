@@ -1,0 +1,1 @@
+if (Drinks.find().count() === 0) { Drinks.insert({    drinkName: 'Vodka & Soda',    drinkIngredients: 'vodka, soda'  });  Drinks.insert({    drinkName: 'Rum & Coke',    drinkIngredients: 'rum, coke'});  Drinks.insert({    drinkName: 'Martini',    drinkIngredients: 'gin, vermouth'}); }

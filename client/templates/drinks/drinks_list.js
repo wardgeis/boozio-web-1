@@ -1,0 +1,1 @@
+Template.drinksList.helpers({  drinks: function() {    return Drinks.find({}, {sort: {submitted: -1}});  }});
