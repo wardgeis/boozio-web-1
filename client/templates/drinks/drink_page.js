@@ -1,0 +1,1 @@
+Template.drinkPage.helpers({  comments: function() {    return Comments.find({drinkId: this._id});  }});
