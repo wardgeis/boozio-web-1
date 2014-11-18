@@ -1,1 +1,1 @@
-Meteor.publish('drinks', function() {  return Drinks.find();});Meteor.publish('comments', function(drinkId) {  check(drinkId, String);  return Comments.find();});
+Meteor.publish('drinks', function() {  return Drinks.find();});Meteor.publish('comments', function(drinkId) {  check(drinkId, String);  return Comments.find();});Meteor.publish('notifications', function() {  return Notifications.find({userId: this.userId, read: false});});
