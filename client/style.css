@@ -1,4 +1,23 @@
-a.newDrinkButton {
-  color: #f8f8f8;
-  text-decoration: none;
+body {
+  background-color: #B2D1E5;
+  font-color: #GGGGGG;
+}
+h1, h2, h3, h4, p {
+  font-color: #GGGGGG;
+}
+a {
+color: #6FB7E9;
+text-decoration: none;
+}
+.navbar-default {
+background-color: #6FB7E9;
+border-color: #6FB7E9;
+}
+.navbar-default .navbar-brand {
+color: #FFFFFF;
+font-family: 'Lobster', cursive;
+font-size: 28px;
+}
+.navbar-default .navbar-nav > li > a {
+color: #GGGGGG;
 }
