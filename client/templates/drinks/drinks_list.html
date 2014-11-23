@@ -1,1 +1,1 @@
-<template name="drinksList">  <div class="drinks">    {{#each drinks}}      {{> drinkItem}}    {{/each}}  </div></template>
+<template name="drinksList">  <div class="drinks">    {{#each drinks}}      {{> drinkItem}}    {{/each}}    {{#if nextPath}}      <a href="{{nextPath}}">      <button type="button" class="btn btn-default btn-lg btn-block">Load more</button></a>    {{else}}      {{#unless ready}}        {{> spinner}}      {{/unless}}    {{/if}}  </div></template>
