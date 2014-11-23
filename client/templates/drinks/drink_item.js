@@ -1,1 +1,1 @@
-Template.drinkItem.helpers({  ownDrink: function() {    return this.userId === Meteor.userId();  }});
+Template.drinkItem.helpers({  ownDrink: function() {    return this.userId == Meteor.userId();  }});
