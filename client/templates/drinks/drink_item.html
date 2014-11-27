@@ -7,7 +7,11 @@
         submitted by {{author}} | {{pluralize votes "like"}} | {{pluralize commentsCount "comment"}}
         {{#if ownDrink}}<button class="btn btn-sm btn-primary btn-info" href="{{pathFor 'drinkEdit'}}">Edit Drink</button>{{/if}}
       </p>
-      <h4>{{drinkIngredients}}</h4>
+      <h4>{{drinkDescription}}</h4>
+      <h5>Ingredients:</h5>
+      <p>{{drinkIngredients}}</p>
+      <h4>Instructions:</h4>
+      <p>{{drinkInstructions}}</p>
     </div>
   </div>
 </template>
