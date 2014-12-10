@@ -71,3 +71,9 @@ font-weight: bold;
 .navbar-nav > li {
   background-color: #F56218;
 }
+
+#drinkWell.well {
+  background-color: #919167;
+  border: 1px solid #919167;
+  border-radius: 15px;
+}
