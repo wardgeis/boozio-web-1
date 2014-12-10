@@ -20,6 +20,7 @@ p {
   color: #FFFFFF;
   font-family: 'Lobster', cursive;
   font-size: 28px;
+  /*font-weight: bold;*/
 }
 .navbar-default .navbar-nav > li > a {
   color: #FFFFFF;
@@ -47,4 +48,26 @@ p {
 .btn-default.disabled {
   background-color: #9DC9AC;
   border-color: #8DB59B;
+}
+.btn-primary {
+  background-color: #F56218;
+  border-color: #DC5816;
+}
+.btn-primary:hover {
+  background-color: #555;
+  border-color: #DC5816;
+}
+
+a#signup-link {
+  color: #F56218;
+}
+
+.navbar-nav > .active > a {
+color: #555;
+font-weight: bold;
+/* background-color: #e7e7e7; */
+}
+
+.navbar-nav > li {
+  background-color: #F56218;
 }
