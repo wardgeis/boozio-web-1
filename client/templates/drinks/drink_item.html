@@ -1,17 +1,37 @@
 <template name="drinkItem">
-  <div class="drink">
-    <div class="post-content">
-      <h3><a href="{{pathFor 'drinkPage'}}">{{drinkName}}</a> <a href="#" class="btn btn-small btn-default {{upvotedClass}}">⬆</a>
-      </h3>
-      <p>
-        submitted by {{author}} | {{pluralize votes "like"}} | {{pluralize commentsCount "comment"}}
-        {{#if ownDrink}}<button class="btn btn-sm btn-primary btn-info" href="{{pathFor 'drinkEdit'}}">Edit Drink</button>{{/if}}
-      </p>
-      <h4>{{drinkDescription}}</h4>
-      <h5>Ingredients:</h5>
-      <p>{{drinkIngredients}}</p>
-      <h4>Instructions:</h4>
-      <p>{{drinkInstructions}}</p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="drink">
+        <div class="post-content">
+          <h3><a href="{{pathFor 'drinkPage'}}">{{drinkName}}</a> <a href="#" class="btn btn-small btn-default {{upvotedClass}}">⬆</a>
+          </h3>
+          <p>
+          submitted by {{author}} | {{pluralize votes "like"}} | {{pluralize commentsCount "comment"}}
+          {{#if ownDrink}}<button class="btn btn-sm btn-primary btn-info" href="{{pathFor 'drinkEdit'}}">Edit Drink</button>{{/if}}
+          </p>
+          <h4>{{drinkDescription}}</h4>
+          <h5>Ingredients:</h5>
+          <p>{{drinkIngredients}}</p>
+          <h4>Instructions:</h4>
+          <p>{{drinkInstructions}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="drink">
+        <div class="post-content">
+          <img class="drink-photo" src="https://openclipart.org/image/300px/svg_to_png/8462/johnny_automatic_bar_drinks.png" alt="Drink Image" border="1">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="drink">
+        <div class="post-content">
+          <ul class="comments">
+            <h3>I'd  like to put a list of comments running down side, here.</h3>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
